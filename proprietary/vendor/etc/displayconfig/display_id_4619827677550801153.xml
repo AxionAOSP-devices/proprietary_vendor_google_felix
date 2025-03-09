@@ -44,7 +44,6 @@
             <timeMinSecs>60</timeMinSecs>
         </timing>
         <allowInLowPowerMode>false</allowInLowPowerMode>
-        <minimumHdrPercentOfScreen>0.5</minimumHdrPercentOfScreen>
         <sdrHdrRatioMap>
             <point>
                 <sdrNits>2.000</sdrNits>
@@ -388,6 +387,36 @@
             </point>
         </sdrHdrRatioMap>
     </highBrightnessMode>
+    <hdrBrightnessConfig>
+        <brightnessMap>
+            <point>
+                <first>0.0</first>
+                <!-- 1200 nits -->
+                <second>1.0</second>
+            </point>
+        </brightnessMap>
+        <brightnessIncreaseDebounceMillis>10000</brightnessIncreaseDebounceMillis>
+        <screenBrightnessRampIncrease>0.004</screenBrightnessRampIncrease>
+        <brightnessDecreaseDebounceMillis>5000</brightnessDecreaseDebounceMillis>
+        <screenBrightnessRampDecrease>0.004</screenBrightnessRampDecrease>
+        <minimumHdrPercentOfScreenForNbm>0</minimumHdrPercentOfScreenForNbm>
+        <minimumHdrPercentOfScreenForHbm>0.5</minimumHdrPercentOfScreenForHbm>
+        <allowInLowPowerMode>false</allowInLowPowerMode>
+        <sdrHdrRatioMap>
+            <point>
+                <first>2.0</first>
+                <second>8.0</second>
+            </point>
+            <point>
+                <first>147.556</first>
+                <second>4.032</second>
+            </point>
+            <point>
+                <first>600.0</first>
+                <second>2.0</second>
+            </point>
+        </sdrHdrRatioMap>
+    </hdrBrightnessConfig>
 
     <quirks>
         <quirk>canSetBrightnessViaHwc</quirk>
