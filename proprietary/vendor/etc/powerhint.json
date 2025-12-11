@@ -181,6 +181,7 @@
       "Path": "/proc/vendor_sched/groups/cam/uclamp_min",
       "Values": [
         "764",
+        "180",
         "0"
       ],
       "ResetOnInit": true
@@ -1731,6 +1732,12 @@
       "Value": "0"
     },
     {
+      "PowerHint": "CAMERA_ADJUST_CAM_UCLAMP_MIN",
+      "Node": "CAMUClampBoost",
+      "Duration": 0,
+      "Value": "180"
+    },
+    {
       "PowerHint": "CAMERA_STREAMING_LOW",
       "Node": "PowerHALCameraRunning",
       "Duration": 0,
@@ -1789,24 +1796,6 @@
       "Node": "NPITaskPacking",
       "Duration": 0,
       "Value": "0"
-    },
-    {
-      "PowerHint": "CAMERA_MULTI_CAM_STREAMING",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 0,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "CAMERA_MULTI_CAM_STREAMING",
-      "Node": "CPUMidClusterMaxFreq",
-      "Duration": 0,
-      "Value": "9999999"
-    },
-    {
-      "PowerHint": "CAMERA_MULTI_CAM_STREAMING",
-      "Node": "CPULittleClusterMaxFreq",
-      "Duration": 0,
-      "Value": "9999999"
     },
     {
       "PowerHint": "CAMERA_VIDEO_RECORDING",
