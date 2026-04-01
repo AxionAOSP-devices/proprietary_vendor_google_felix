@@ -215,34 +215,34 @@
             "Combination":["OPEN-SUB-MAX", "CLOSE-SUB-MAX"],
             "Coefficient":["OPEN_WEIGHT", "CLOSE_WEIGHT"],
             "CoefficientType":["SENSOR", "SENSOR"],
-            "HotThreshold":["NAN", 25.0, 39.0, 41.0, 45.0, 46.5, 54.0],
-            "HotHysteresis":[0.0, 1.9, 1.9, 1.9, 1.9, 1.4, 1.9],
+            "HotThreshold":["NAN", 35.0, 42.0, 45.0, 47.0, 50.0, 54.0],
+            "HotHysteresis":[0.0, 1.9, 2.5, 1.9, 1.9, 1.9, 1.9],
             "Multiplier":0.001,
             "PollingDelay":60000,
             "PassiveDelay":60000,
             "PIDInfo": {
-                "K_Po":["NAN", "NAN", 1000, "NAN", "NAN", "NAN", "NAN"],
-                "K_Pu":["NAN", "NAN", 30, "NAN", "NAN", "NAN", "NAN"],
-                "K_I":["NAN", "NAN", 40, "NAN", "NAN", "NAN", "NAN"],
+                "K_Po":["NAN", "NAN", 300, "NAN", "NAN", "NAN", "NAN"],
+                "K_Pu":["NAN", "NAN", 300, "NAN", "NAN", "NAN", "NAN"],
+                "K_I":["NAN", "NAN", 5, "NAN", "NAN", "NAN", "NAN"],
                 "K_D":["NAN", "NAN", 0, "NAN", "NAN", "NAN", "NAN"],
-                "I_Max":["NAN", "NAN", 1500, "NAN", "NAN", "NAN", "NAN"],
+                "I_Max":["NAN", "NAN", 500, "NAN", "NAN", "NAN", "NAN"],
                 "S_Power":["NAN", "NAN", 3000, "NAN", "NAN", "NAN", "NAN"],
                 "MinAllocPower":["NAN", "NAN", 0, "NAN", "NAN", "NAN", "NAN"],
                 "MaxAllocPower":["NAN", "NAN", 10000, "NAN", "NAN", "NAN", "NAN"],
-                "I_Cutoff":["NAN", "NAN", 14, "NAN", "NAN", "NAN", "NAN"],
-                "I_Default":1500
+                "I_Cutoff":["NAN", "NAN", 2, "NAN", "NAN", "NAN", "NAN"],
+                "I_Default":0
             },
             "ExcludedPowerInfo": [
                 {
                     "PowerRail": "PARTIAL_SYSTEM_POWER",
-                    "PowerWeight": [1.6, 1.6, 1.6, 1.6, 1.6, 1.6, 1.6]
+                    "PowerWeight": [0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5]
                 }
             ],
             "BindedCdevInfo": [
                 {
                     "CdevRequest": "chg_mdis",
                     "CdevWeightForPID": [1, 1, 1, 1, 1, 1, 1],
-                    "MaxReleaseStep": 1,
+                    "MaxReleaseStep": 2,
                     "MaxThrottleStep": 2,
                     "CdevCeiling": [0, 10, 11, 11, 12, 12, 12],
                     "LimitInfo": [0, 0, 0, 0, 0, 12, 12]
