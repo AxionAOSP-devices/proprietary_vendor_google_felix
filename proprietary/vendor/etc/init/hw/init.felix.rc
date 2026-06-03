@@ -109,8 +109,8 @@ on property:persist.device_config.vendor_system_native_boot.thermal_proactive_sk
     setprop vendor.thermal.config "thermal_info_config_proactive_skin.json"
 
 on property:vendor.thermal.link_ready=1
-    write /dev/thermal/tz-by-name/skin_therm/trip_point_1_temp 61000
-    write /dev/thermal/tz-by-name/skin_therm/trip_point_2_temp 63000
+    write /dev/thermal/tz-by-name/skin_therm/trip_point_1_temp 65000
+    write /dev/thermal/tz-by-name/skin_therm/trip_point_2_temp 68000
 
 # Bluetooth
 on post-fs-data
