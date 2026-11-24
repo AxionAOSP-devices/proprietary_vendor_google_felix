@@ -161,9 +161,10 @@
       "Path": "/proc/vendor_sched/dvfs_headroom",
       "Values": [
         "1280",
-        "1100 1078 1024"
+        "1100 1078 1024",
+        "1100"
       ],
-      "DefaultIndex": 0,
+      "DefaultIndex": 2,
       "ResetOnInit": true
     },
     {
@@ -929,6 +930,12 @@
       "Value": "LAUNCH_PMU"
     },
     {
+      "PowerHint": "LAUNCH",
+      "Node": "CPUDVFSHeadroom",
+      "Duration": 5000,
+      "Value": "1280"
+    },
+    {
       "PowerHint": "LAUNCH_PMU",
       "Node": "PMU_POLL",
       "Duration": 3000,
@@ -951,6 +958,12 @@
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 2000,
       "Value": "9999999"
+    },
+    {
+      "PowerHint": "LAUNCH_EXTEND",
+      "Node": "CPUDVFSHeadroom",
+      "Duration": 2000,
+      "Value": "1280"
     },
     {
       "PowerHint": "DISPLAY_CHANGE",
@@ -1016,6 +1029,12 @@
       "Node": "NPITaskPacking",
       "Duration": 5000,
       "Value": "0"
+    },
+    {
+      "PowerHint": "DISPLAY_CHANGE",
+      "Node": "CPUDVFSHeadroom",
+      "Duration": 5000,
+      "Value": "1280"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
@@ -1732,6 +1751,12 @@
       "Value": "0"
     },
     {
+      "PowerHint": "CAMERA_STREAMING_STANDARD",
+      "Node": "CPUDVFSHeadroom",
+      "Duration": 0,
+      "Value": "1280"
+    },
+    {
       "PowerHint": "CAMERA_ADJUST_CAM_UCLAMP_MIN",
       "Node": "CAMUClampBoost",
       "Duration": 0,
@@ -1796,6 +1821,12 @@
       "Node": "NPITaskPacking",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "CAMERA_STREAMING_LOW",
+      "Node": "CPUDVFSHeadroom",
+      "Duration": 0,
+      "Value": "1280"
     },
     {
       "PowerHint": "CAMERA_VIDEO_RECORDING",
